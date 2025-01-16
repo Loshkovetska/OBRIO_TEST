@@ -16,7 +16,7 @@ export default function Header({
   canGoBack = true,
 }: HeaderPropType) {
   return (
-    <header className="w-full flex items-center justify-center py-[10px] lg:py-[15px] px-[15px] relative lg:h-[54px] h-[44px] max-w-[1180px] mx-auto">
+    <header className="w-full flex items-center justify-center py-[10px] lg:py-[15px] relative lg:h-[54px] h-[44px] max-w-[1180px] mx-auto">
       {canGoBack && (
         <HeaderBack
           slug={slug}

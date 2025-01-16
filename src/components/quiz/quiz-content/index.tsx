@@ -44,7 +44,7 @@ export default function QuizContent({
   );
 
   return (
-    <div className="flex flex-col gap-[30px] mx-auto w-full max-md:px-[15px] md:max-w-[330px]">
+    <div className="flex flex-col gap-[30px] mx-auto w-full md:max-w-[330px]">
       <QuizContentHeader {...content} />
       {content.screenType === "date" && <QuizBirthDate />}
       <QuizOptions

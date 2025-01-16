@@ -32,7 +32,7 @@ export default function HeaderBack({ theme, slug }: HeaderBackPropType) {
   return (
     <Chevron
       className={cls(
-        "absolute left-4 top-1/2 -translate-y-1/2",
+        "absolute left-0 top-1/2 -translate-y-1/2",
         theme === "dark" && "[&>path]:fill-[white]"
       )}
       onClick={handleGoBack}

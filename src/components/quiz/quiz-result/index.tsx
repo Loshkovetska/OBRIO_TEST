@@ -14,13 +14,13 @@ export default function QuizResult({ data }: { data: QuizResultType }) {
   );
 
   return (
-    <div className="flex flex-col gap-5 pb-20 px-[15px]">
+    <div className="flex flex-col gap-5 pb-20 max-w-[1180px] w-full mx-auto">
       <h1 className="text-2xl font-bold text-center">Results</h1>
-      <div className="flex flex-col gap-4 list-decimal">
+      <div className="flex flex-col gap-4">
         {Object.entries(data).map(([key, value]) => (
           <Fragment key={key}>
             {state.quiz[key] && (
-              <div className="flex gap-3 flex-col list-decimal">
+              <div className="flex gap-3 flex-col">
                 <h2 className="text-lg font-bold">
                   {getTitle(value.title, value.replace_parts)}
                 </h2>

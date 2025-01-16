@@ -17,7 +17,7 @@ export default function QuizWrapper(props: QuizWrapperPropType) {
   return (
     <div
       className={cls(
-        "w-full flex flex-col gap-5 grow pb-20",
+        "w-full flex flex-col gap-5 grow pb-20 px-[15px]",
         theme === "dark" ? "bg-primary" : "bg-powder-puff"
       )}
     >

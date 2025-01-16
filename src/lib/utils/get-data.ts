@@ -26,16 +26,6 @@ export async function getFirstStep() {
   };
 }
 
-export async function getQuizInitialState() {
-  const fullData = await getFullData();
-  const obj: { [key in string]: string } = {};
-  Object.keys(fullData).forEach((k) => {
-    obj[k] = "";
-  });
-
-  return obj;
-}
-
 export async function getQuizQuestions(): Promise<QuizResultType> {
   const fullData = await getFullData();
   const obj: QuizResultType = {};
