@@ -1,0 +1,308 @@
+{
+  "gender": {
+    "title": "Select your gender:",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Female",
+        "next": "rls-status"
+      },
+      {
+        "label": "Male",
+        "next": "rls-status"
+      }
+    ]
+  },
+  "rls-status": {
+    "title": "So we can get to know you better, tell us about your relationship status.",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Single",
+        "next": "single-parent"
+      },
+      {
+        "label": "In a relationship",
+        "next": "rls-parent"
+      }
+    ]
+  },
+  "single-parent": {
+    "title": "Are you a single parent?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Yes",
+        "next": "single-problem"
+      },
+      {
+        "label": "No",
+        "next": "single-problem"
+      }
+    ]
+  },
+  "rls-parent": {
+    "title": "Are you a parent?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Yes",
+        "next": "rls-problem"
+      },
+      {
+        "label": "No",
+        "next": "rls-problem"
+      }
+    ]
+  },
+  "single-problem": {
+    "title": "Single {gender} {who have children (if have children)} need a slightly different approach to improve their relationship. Which statement best describes you?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "I’m very unhappy with how things are going in my relationship",
+        "next": "overthink-traits"
+      },
+      {
+        "label": "I’m unhappy with parts of my relationship, but some things are working well",
+        "next": "overthink-traits"
+      },
+      {
+        "label": "I’m generally happy in my relationship",
+        "next": "overthink-traits"
+      }
+    ],
+    "replace_parts": {
+      "{gender}": "gender",
+      "{who have children (if have children)}": "single-parent"
+    }
+  },
+  "rls-problem": {
+    "title": "{Gender} {who have children (if have children)} need a slightly different approach to find their perfect partner. But first, how did you feel in your last relationship?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "I’m very unhappy with how things are going in my relationship",
+        "next": "partner-personality"
+      },
+      {
+        "label": "I’m unhappy with parts of my relationship, but some things are working well",
+        "next": "partner-personality"
+      },
+      {
+        "label": "I’m generally happy in my relationship",
+        "next": "partner-personality"
+      },
+      {
+        "label": "I’ve never been in a relationship",
+        "next": "partner-personality"
+      }
+    ],
+    "replace_parts": {
+      "{Gender}": "gender",
+      "{who have children (if have children)}": "rls-parent"
+    }
+  },
+
+  "overthink-traits": {
+    "title": "Do you tend to overthink?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Yes",
+        "next": "important-traits"
+      },
+      {
+        "label": "No",
+        "next": "emotional-traits"
+      }
+    ],
+    "subscreen": {
+      "title": "So how does it work?",
+      "description": "We analyze hundreds of data points to create your unique astrological blueprint. This is combined with AI to tailor-make your astrological insights, based on your answers. We’re going to change your relationship with astrology.",
+      "theme": "dark",
+      "align": "center",
+      "options": [
+        {
+          "label": "Next"
+        }
+      ]
+    }
+  },
+  "important-traits": {
+    "title": "What is most important to you?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Success",
+        "next": "about-us"
+      },
+      {
+        "label": "Romance",
+        "next": "about-us"
+      },
+      {
+        "label": "Stability",
+        "next": "about-us"
+      },
+      {
+        "label": "Freedom",
+        "next": "about-us"
+      }
+    ]
+  },
+  "emotional-traits": {
+    "title": "Is emotional control tricky for you?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Yes",
+        "next": "about-us"
+      },
+      {
+        "label": "Sometimes",
+        "next": "about-us"
+      },
+      {
+        "label": "Rarely",
+        "next": "about-us"
+      },
+      {
+        "label": "Not at all",
+        "next": "about-us"
+      }
+    ]
+  },
+  "partner-personality": {
+    "title": "Is your partner an introvert or extrovert?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Introvert",
+        "next": "partner-gender"
+      },
+      {
+        "label": "Extrovert",
+        "next": "partner-gender"
+      },
+      {
+        "label": "A bit of both",
+        "next": "partner-gender"
+      }
+    ]
+  },
+  "partner-gender": {
+    "title": "What is your partner’s gender?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Male",
+        "next": "partner-priority"
+      },
+      {
+        "label": "Female",
+        "next": "partner-priority"
+      }
+    ]
+  },
+  "partner-priority": {
+    "title": "Do you agree with the statement below?",
+    "subtitle": "“My partner and I make sex a priority in our relationship”",
+    "screenType": "options",
+    "align": "center",
+    "options": [
+      {
+        "label": "Strongly agree",
+        "next": "rls-goals"
+      },
+      {
+        "label": "Agree",
+        "next": "rls-goals"
+      },
+      {
+        "label": "Neutral",
+        "next": "rls-goals"
+      },
+      {
+        "label": "Disagee",
+        "next": "rls-goals"
+      },
+      {
+        "label": "Strongly disagree",
+        "next": "rls-goals"
+      }
+    ]
+  },
+  "rls-goals": {
+    "title": "When you think about your relationship goals, you feel...?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Optimistic! They are totally doable, with some guidance.",
+        "next": "about-us"
+      },
+      {
+        "label": "Cautious. I’ve struggled before, but I’m hopeful.",
+        "next": "about-us"
+      },
+      {
+        "label": "I’m feeling a little anxious, honestly.",
+        "next": "about-us"
+      }
+    ]
+  },
+  "about-us": {
+    "title": "Where did you hear about us?",
+    "screenType": "options",
+    "options": [
+      {
+        "label": "Poster or Billboard"
+      },
+      {
+        "label": "Friend or Family"
+      },
+      {
+        "label": "Instagram"
+      },
+      {
+        "label": "Direct Mail or Package Insert"
+      },
+      {
+        "label": "Online TV or Streaming TV"
+      },
+      {
+        "label": "TV"
+      },
+      {
+        "label": "Radio"
+      },
+      {
+        "label": "Search Engine (Google, Bing, etc.)"
+      },
+      {
+        "label": "Newspaper or Magazine"
+      },
+      {
+        "label": "Facebook"
+      },
+      {
+        "label": "Blog Post or Website Review"
+      },
+      {
+        "label": "Podcast"
+      },
+      {
+        "label": "Influencer"
+      },
+      {
+        "label": "Youtube"
+      },
+      {
+        "label": "Pinterest"
+      },
+      {
+        "label": "Other"
+      }
+    ]
+  }
+}

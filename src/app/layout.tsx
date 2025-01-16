@@ -1,3 +1,5 @@
+import Providers from "@/app/providers";
+import { getQuizInitialState } from "@/lib/utils/get-data";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
@@ -11,14 +13,16 @@ export const metadata: Metadata = {
   description: "",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default async function RootLayout(props: React.PropsWithChildren) {
+  const initData = await getQuizInitialState();
   return (
-    <html lang="en">
-      <body className={`${openSans.variable} antialiased`}>{children}</body>
+    <html
+      lang="en"
+      className="flex flex-col min-h-screen"
+    >
+      <body className={`${openSans.variable} antialiased flex flex-col grow`}>
+        <Providers initData={initData}>{props.children}</Providers>
+      </body>
     </html>
   );
 }
